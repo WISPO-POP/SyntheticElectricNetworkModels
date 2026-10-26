@@ -1,14 +1,16 @@
 # Synthetic Network Models
 
-These cases are entirely synthetic electric grids that cover various portions of the United States. The synthetic transmission systems were designed by algorithms described in [1] to be statistically similar to actual transmission system models but without modeling any actual transmission lines.
+These cases are entirely synthetic electric grids that cover various portions of the United States. The synthetic transmission systems were designed by algorithms described in [1] and [2] to be statistically similar to actual transmission system models but without modeling any actual transmission lines.
 
-When publishing results based on these grid models, please cite:
-[1] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021. 
+When publishing results based on these grid models, please cite both:
+[1] J. M. Snodgrass, T. J. Overbye, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+
+[2] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
 
 This is a synthetic electric grid model that does not represent the actual grid. It was developed as part of the US ARPA-E GRID DATA research project and contains no CEII.
 
 Copyright (c) 2022 by J. Snodgrass, S. Greene, B. Lesieutre, C. DeMarco
-Licensed under the Creative Commons Attribution 4.0 International license, http://creativecommons.org/licenses/by/4.0/
+Licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0), http://creativecommons.org/licenses/by/4.0/; the full text is in [LICENSE](LICENSE). You may share, adapt and use these models for any purpose, including commercially, if you give credit by citing [1] and [2].
 
 <!-- Sections below were added on 2026-09-27. The original text above is unchanged. -->
 
@@ -20,7 +22,7 @@ This repository holds synthetic transmission network cases for seven U.S. region
 
 ```mermaid
 flowchart LR
-    A["Network construction algorithms<br/>(reference [1] above)"] --> B["PowerWorld Simulator case<br/>.pwb + one-line .pwd"]
+    A["Network construction algorithms<br/>(references [1] and [2] above)"] --> B["PowerWorld Simulator case<br/>.pwb + one-line .pwd"]
     B --> C["MATPOWER export<br/>.m (mpc format version 2)"]
     B --> D["PSS/E export<br/>.RAW (revision 33)"]
     E["Generator supplement<br/>-sup.csv (Eastern, Western)"] --> F["Your study<br/>power flow, OPF, time series"]
@@ -141,4 +143,4 @@ The report in `Synthetic Generator Cost Curves/` names Sogol Babaeinejadsarookol
 
 ## Funding / How to cite
 
-Cite reference [1] at the top of this file. The top of this file also states that the models were developed in the US ARPA-E GRID DATA project. Each region README repeats the same reference.
+Cite references [1] and [2] at the top of this file. The top of this file also states that the models were developed in the US ARPA-E GRID DATA project (award DE-AR0000717). Each region README repeats the same references.
