@@ -1,16 +1,18 @@
 # Synthetic Network Models
 
-These cases are entirely synthetic electric grids that cover various portions of the United States. The synthetic transmission systems were designed by algorithms described in [1] and [2] to be statistically similar to actual transmission system models but without modeling any actual transmission lines.
+These cases are entirely synthetic electric grids that cover various portions of the United States. The synthetic transmission systems were designed by algorithms described in [2] and [3] to be statistically similar to actual transmission system models but without modeling any actual transmission lines.
 
-When publishing results based on these grid models, please cite both:
-[1] J. M. Snodgrass, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+When publishing results based on these grid models, please cite all three:
+[1] J. M. Snodgrass, S. Greene, T. J. Overbye, B. C. Lesieutre and C. L. DeMarco, "EPIGRIDS: A Complementary Family of Synthetic Power Grid Models for Grid-Literate AI," manuscript in preparation for the IEEE Open Access Journal of Power and Energy, 2026.
 
-[2] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
+[2] J. M. Snodgrass, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+
+[3] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
 
 This is a synthetic electric grid model that does not represent the actual grid. It was developed as part of the US ARPA-E GRID DATA research project and contains no CEII.
 
 Copyright (c) 2022 by J. Snodgrass, S. Greene, B. Lesieutre, C. DeMarco
-Licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0), http://creativecommons.org/licenses/by/4.0/; the full text is in [LICENSE](LICENSE). You may share, adapt and use these models for any purpose, including commercially, if you give credit by citing [1] and [2].
+Licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0), http://creativecommons.org/licenses/by/4.0/; the full text is in [LICENSE](LICENSE). You may share, adapt and use these models for any purpose, including commercially, if you give credit by citing [1], [2] and [3].
 
 <!-- Sections below were added on 2026-09-27. The original text above is unchanged. -->
 
@@ -180,4 +182,4 @@ The report in `Synthetic Generator Cost Curves/` names Sogol Babaeinejadsarookol
 
 ## Funding / How to cite
 
-Cite references [1] and [2] at the top of this file. The top of this file also states that the models were developed in the US ARPA-E GRID DATA project (award DE-AR0000717). Each region README repeats the same references.
+Cite this release by its Zenodo DOI (10.5281/zenodo.23814538 for v1.0.0; 10.5281/zenodo.23814537 always resolves to the newest version) and references [1] to [3] at the top of this file. The top of this file also states that the models were developed in the US ARPA-E GRID DATA project (award DE-AR0000717). Each region README repeats the same references.
