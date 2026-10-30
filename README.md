@@ -3,7 +3,7 @@
 These cases are entirely synthetic electric grids that cover various portions of the United States. The synthetic transmission systems were designed by algorithms described in [1] and [2] to be statistically similar to actual transmission system models but without modeling any actual transmission lines.
 
 When publishing results based on these grid models, please cite both:
-[1] J. M. Snodgrass, T. J. Overbye, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+[1] J. M. Snodgrass, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
 
 [2] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
 
@@ -24,7 +24,7 @@ This repository holds synthetic transmission network cases for seven U.S. region
 flowchart LR
     A["Network construction algorithms<br/>(references [1] and [2] above)"] --> B["PowerWorld Simulator case<br/>.pwb + one-line .pwd"]
     B --> C["MATPOWER export<br/>.m (mpc format version 2)"]
-    B --> D["PSS/E export<br/>.RAW (revision 33)"]
+    B --> D["PSS/E export<br/>.RAW (revision 36)"]
     E["Generator supplement<br/>-sup.csv (Eastern, Western)"] --> F["Your study<br/>power flow, OPF, time series"]
     B --> F
     C --> F
@@ -38,13 +38,13 @@ The `.m` and `.RAW` files were written by PowerWorld Simulator: each `.m` file s
 | Folder | What it contains | Main contributor (git history) | Start here |
 |---|---|---|---|
 | [`Eastern Network/`](Eastern%20Network/README.txt) | Eastern Interconnection case `Base_Eastern_Interconnect_515GW` (`.pwb`, `.m`, `.RAW`), one-line `Eastern Network One-Line.pwd`, generator supplement `Base_Eastern_Interconnect_515GW-sup.csv` | Jonathan Snodgrass | `Base_Eastern_Interconnect_515GW.pwb` |
-| [`Florida/`](Florida/README.txt) | Florida case `Base_Florida_42GW` (`.pwb`, `.m`, `.RAW`), `Base_Florida_42GW_PW_Version20.PWB`, one-line `Florida-One-Line.pwd` | Jonathan Snodgrass | `Base_Florida_42GW.pwb` |
-| [`Midwest/`](Midwest/README.txt) | Michigan, Ohio and Indiana case `Base_MIOHIN_76GW` (`.pwb`, `.m`, `.RAW`), `Base_MIOHIN_76GW_PW_Verson20.PWB`, one-line `MIOHIN-One-Line.pwd` | Jonathan Snodgrass | `Base_MIOHIN_76GW.pwb` |
+| [`Florida/`](Florida/README.txt) | Florida case `Base_Florida_42GW` (`.pwb`, `.m`, `.RAW`), one-line `Florida-One-Line.pwd` | Jonathan Snodgrass | `Base_Florida_42GW.pwb` |
+| [`Midwest/`](Midwest/README.txt) | Michigan, Ohio and Indiana case `Base_MIOHIN_76GW` (`.pwb`, `.m`, `.RAW`), one-line `MIOHIN-One-Line.pwd` | Jonathan Snodgrass | `Base_MIOHIN_76GW.pwb` |
 | [`New England/`](New%20England/Readme%20New%20England.txt) | 250-bus New England system: PowerWorld, MATPOWER and PSS/E cases for several load levels and two voltage-limit sets, and a case description (see the table below) | Jonathan Snodgrass | `New England 250 Bus System and Case Descriptions.docx` |
 | [`Synthetic Generator Cost Curves/`](Synthetic%20Generator%20Cost%20Curves/Creating%20synthetic%20generator%20cost%20curves.pdf) | PDF report "Synthetic Power System, Generator Cost Curves" on deriving constant, linear and quadratic cost coefficients for the generators of a synthetic system. The `Readme.md` in this folder is blank. | Jonathan Snodgrass | `Creating synthetic generator cost curves.pdf` |
-| [`Texas/`](Texas/README%20Texas.txt) | Texas case `Base_Texas_66GW` (`.pwb`, `.m`, `.RAW`), `Base_Texas_66GW_PW_Version20.PWB`, one-line `Base_Texas_66GW.pwd`, image `TexasOneLine.png` | Jonathan Snodgrass | `Base_Texas_66GW.pwb` |
-| [`Western Network/`](Western%20Network/README%20Western.txt) | Western Interconnection case `Base_West_Interconnect_121GW` (`.pwb`, `.m`, `.RAW`), `Base_West_Interconnect_121GW_PW_Version20.PWB`, one-line `Base_West_Interconnect_121GW.pwd`, generator supplement `Base_West_Interconnect_121GW-sup.csv`, image `WesternOneLine.png` | Jonathan Snodgrass | `Base_West_Interconnect_121GW.pwb` |
-| [`Wisconsin/`](Wisconsin/README%20Wisconsin.txt) | Wisconsin case `Wisconsin_1664` (`.PWB`, `.m`, `.RAW`), `Wisconsin_1664_PW_Version20.PWB`, one-line `Wisconsin_1664_OneLine.pwd` | Jonathan Snodgrass | `Wisconsin_1664.PWB` |
+| [`Texas/`](Texas/README%20Texas.txt) | Texas case `Base_Texas_66GW` (`.pwb`, `.m`, `.RAW`), one-line `Base_Texas_66GW.pwd`, image `TexasOneLine.png` | Jonathan Snodgrass | `Base_Texas_66GW.pwb` |
+| [`Western Network/`](Western%20Network/README%20Western.txt) | Western Interconnection case `Base_West_Interconnect_121GW` (`.pwb`, `.m`, `.RAW`), one-line `Base_West_Interconnect_121GW.pwd`, generator supplement `Base_West_Interconnect_121GW-sup.csv`, image `WesternOneLine.png` | Jonathan Snodgrass | `Base_West_Interconnect_121GW.pwb` |
+| [`Wisconsin/`](Wisconsin/README%20Wisconsin.txt) | Wisconsin case `Wisconsin_1664` (`.PWB`, `.m`, `.RAW`), one-line `Wisconsin_1664_OneLine.pwd` | Jonathan Snodgrass | `Wisconsin_1664.PWB` |
 | Root files | `README.md` (this file), `LICENSE`, `.gitignore` | Jonathan Snodgrass | `README.md` |
 
 ### Case sizes
@@ -78,7 +78,7 @@ Counted from the `.m` files; the `.RAW` files give the same counts. Load is the 
 2. Install the tool for the format you want to use:
    - **PowerWorld Simulator** (Windows) for `.pwb`/`.PWB`, `.pwd` and `.tsb` files. Check that your Simulator license allows the case size you open (the Eastern case has 78,484 buses).
    - **MATLAB or GNU Octave with MATPOWER** for `.m` files. Download MATPOWER and run `install_matpower` once so its functions are on the path.
-   - **PSS/E**, or another program that reads PSS/E revision 33 raw data, for `.RAW` files. PowerWorld Simulator can also open `.RAW` files.
+   - **PSS/E**, or another program that reads PSS/E revision 36 raw data (revision 33 for New England), for `.RAW` files. PowerWorld Simulator can also open `.RAW` files.
 3. No Python environment is needed. The repository has no code, so there is no `requirements.txt`.
 4. There are no hard-coded paths to edit.
 
@@ -89,8 +89,7 @@ PowerWorld Simulator:
 1. **File > Open Case** and pick the region's case, for example `Florida/Base_Florida_42GW.pwb`.
 2. **File > Open Oneline** and pick the matching one-line, for example `Florida/Florida-One-Line.pwd`.
 3. Switch to Run Mode and solve the power flow (Single Solution).
-4. If your Simulator version cannot open the main `.pwb`, try the `_PW_Version20.PWB` file in the same folder. Florida, Midwest, Texas, Western Network and Wisconsin have one (in Midwest it is spelled `Base_MIOHIN_76GW_PW_Verson20.PWB`).
-5. New England time series: open `New England/PowerWorld Cases/MasterCase.PWB`, then read `MasterCase.tsb` into the Time Step Simulation tool.
+4. New England time series: open `New England/PowerWorld Cases/MasterCase.PWB`, then read `MasterCase.tsb` into the Time Step Simulation tool.
 
 MATPOWER (MATLAB or Octave), starting from the repository root:
 
@@ -112,7 +111,7 @@ PSS/E: read the `.RAW` file (for example `Texas/Base_Texas_66GW.RAW`) as power f
 - `.pwb` / `.PWB`: PowerWorld Simulator case.
 - `.pwd`: PowerWorld one-line diagram. Open it after the case.
 - `.m`: MATPOWER case function that returns `mpc` (format version 2, 100 MVA base) with `bus`, `gen`, `branch`, `gencost` and `bus_name`. The six regional cases (all but New England) also have `genfuel` and `gentype`. Generator costs use the polynomial model (model 2) and are at most quadratic.
-- `.RAW`: PSS/E revision 33 power flow data (100 MVA base, 60 Hz).
+- `.RAW`: PSS/E revision 36 power flow data (revision 33 for New England; 100 MVA base, 60 Hz).
 - `-sup.csv` (Eastern, Western): one row per generator, keyed by `BusNum` and `GenID`, with `GenFuelType`, `GenUnitType`, `GenIOB`, `GenIOC` and `GenParFac`.
 - `.tsb` (New England): time-series load data for `MasterCase.PWB`.
 - `.png` (Texas, Western Network): images of the geographic one-line diagram.

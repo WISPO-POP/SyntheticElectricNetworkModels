@@ -1,11 +1,11 @@
 This is an entirely synthetic power system network model that covers the geographic footprint of the New England states 
 (Maine, New Hampshire, Vermont, Massachusetts, Connecticut, Rhode Island). 
-The case is designed with a 345, 230, 138 and 69 kV transmission network to serve a load that roughly mimics the actual population of its 
+The case is designed with a 345, 230, 138, 69 and 14 kV transmission network to serve a load that roughly mimics the actual population of its 
 geographic footprint. The synthetic transmission system was designed by algorithms described in [1] and [2] 
 to be statistically similar to actual transmission system models but without modeling any actual lines.
 
 When publishing results based on this data, please cite both:
-[1] J. M. Snodgrass, T. J. Overbye, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+[1] J. M. Snodgrass, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
 [2] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
 
 This is a synthetic power system model that does not represent the actual grid. It was developed as part of the 
