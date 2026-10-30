@@ -1,0 +1,63 @@
+cff-version: 1.2.0
+message: "If you use these models, please cite this data set and the two references listed below (the method paper and the dissertation)."
+type: dataset
+title: "EPIGRIDS Synthetic Electric Network Models"
+version: "1.0.0"
+date-released: 2026-10-30
+license: CC-BY-4.0
+repository-code: "https://github.com/WISPO-POP/SyntheticElectricNetworkModels"
+url: "https://electricgrids.engr.tamu.edu"
+abstract: >-
+  Seven entirely synthetic transmission network models of U.S. regions, from
+  250 to 78,484 buses: the Eastern and Western interconnections, Texas,
+  Florida, Michigan-Ohio-Indiana (folder Midwest), Wisconsin, and a 250-bus
+  New England system with 12 operating points. Each case is a PowerWorld
+  Simulator case with a one-line diagram, a MATPOWER case and a PSS/E raw data
+  file. The models were developed in the US ARPA-E GRID DATA program
+  (EPIGRIDS project, award DE-AR0000717), model no actual transmission line,
+  and contain no CEII.
+keywords:
+  - synthetic power grid
+  - transmission network
+  - power flow
+  - optimal power flow
+  - test case
+  - EPIGRIDS
+authors:
+  - family-names: Snodgrass
+    given-names: Jonathan M.
+    orcid: "https://orcid.org/0000-0003-2305-8136"
+    affiliation: "Texas A&M University"
+  - family-names: Greene
+    given-names: Scott
+    affiliation: "University of Wisconsin-Madison"
+  - family-names: Lesieutre
+    given-names: Bernard C.
+    orcid: "https://orcid.org/0000-0002-5274-324X"
+    affiliation: "University of Wisconsin-Madison"
+  - family-names: DeMarco
+    given-names: Christopher L.
+    orcid: "https://orcid.org/0000-0002-8817-9804"
+    affiliation: "University of Wisconsin-Madison"
+references:
+  - type: article
+    title: "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids"
+    authors:
+      - family-names: Snodgrass
+        given-names: Jonathan M.
+      - family-names: Lesieutre
+        given-names: Bernard C.
+      - family-names: DeMarco
+        given-names: Christopher L.
+    journal: "International Journal of Electrical Power & Energy Systems"
+    status: in-preparation
+    year: 2026
+  - type: thesis
+    title: "Tractable Algorithms for Constructing Electric Power Network Models"
+    authors:
+      - family-names: Snodgrass
+        given-names: Jonathan M.
+    thesis-type: "Ph.D. thesis"
+    institution:
+      name: "University of Wisconsin-Madison"
+    year: 2021
