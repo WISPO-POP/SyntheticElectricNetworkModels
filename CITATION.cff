@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use these models, please cite this data set and the two references listed below (the method paper and the dissertation)."
+message: "If you use these models, please cite this data set and the three references listed below (the paper that describes the cases, the method paper, and the dissertation)."
 type: dataset
 title: "EPIGRIDS Synthetic Electric Network Models"
 version: "1.0.0"
@@ -40,6 +40,22 @@ authors:
     orcid: "https://orcid.org/0000-0002-8817-9804"
     affiliation: "University of Wisconsin-Madison"
 references:
+  - type: article
+    title: "EPIGRIDS: A Complementary Family of Synthetic Power Grid Models for Grid-Literate AI"
+    authors:
+      - family-names: Snodgrass
+        given-names: Jonathan M.
+      - family-names: Greene
+        given-names: Scott
+      - family-names: Overbye
+        given-names: Thomas J.
+      - family-names: Lesieutre
+        given-names: Bernard C.
+      - family-names: DeMarco
+        given-names: Christopher L.
+    journal: "IEEE Open Access Journal of Power and Energy"
+    status: in-preparation
+    year: 2026
   - type: article
     title: "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids"
     authors:
