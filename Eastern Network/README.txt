@@ -9,7 +9,7 @@ to be statistically similar to actual transmission system models but without mod
 
 When publishing results based on this data, please cite all three:
 [1] J. M. Snodgrass, S. Greene, T. J. Overbye, B. C. Lesieutre and C. L. DeMarco, "EPIGRIDS: A Complementary Family of Synthetic Power Grid Models for Grid-Literate AI," manuscript in preparation for the IEEE Open Access Journal of Power and Energy, 2026.
-[2] J. M. Snodgrass, B. C. Lesieutre and C. L. DeMarco, "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
+[2] J. M. Snodgrass, C. L. DeMarco and B. C. Lesieutre, "GridForge: A Tractable Network-Flow Method for Constructing Open, Continental-Scale Synthetic Power Grids," manuscript in preparation for the International Journal of Electrical Power & Energy Systems, 2026.
 [3] J. M. Snodgrass, "Tractable Algorithms for Constructing Electric Power Network Models," Ph.D. Thesis, The University of Wisconsin - Madison, 2021.
 
 This is a synthetic power system model that does not represent the actual grid. It was developed as part of the 

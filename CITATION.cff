@@ -57,14 +57,14 @@ references:
     status: in-preparation
     year: 2026
   - type: article
-    title: "GridForge: A Tractable, Electrical-Performance-First Method for Constructing Open, Continental-Scale Synthetic Power Grids"
+    title: "GridForge: A Tractable Network-Flow Method for Constructing Open, Continental-Scale Synthetic Power Grids"
     authors:
       - family-names: Snodgrass
         given-names: Jonathan M.
-      - family-names: Lesieutre
-        given-names: Bernard C.
       - family-names: DeMarco
         given-names: Christopher L.
+      - family-names: Lesieutre
+        given-names: Bernard C.
     journal: "International Journal of Electrical Power & Energy Systems"
     status: in-preparation
     year: 2026
